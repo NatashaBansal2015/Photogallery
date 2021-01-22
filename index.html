@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Photo Gallery</title>
+        <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <h1 class="text-3xl h-20 bg-blue-900 text-white flex items-center justify-center">Photo Gallery</h1>
+
+        <div class="container mx-auto py-4">
+            <h2>Search for images</h2>
+            <div class="w-full flex items-end flex-col">
+                <input id="searchImage" class="border p-2 mb-2 w-full" type="text" placeholder="Search for picture">
+                <button id="searchButton" class="bg-blue-500 text-white px-4 py-2 rounded">Search</button>
+            </div>
+
+             <h2>Add new image</h2>
+            <div class="w-full flex items-end flex-col">
+                <input id="imageTitle" class="border p-2 mb-2 w-full" type="text" placeholder="Image title">
+                <input id="imageURL" class="border p-2 mb-/2 w-full" type="text" placeholder="Image url">
+                <button id="imageButton" class="bg-blue-500 text-white px-4 py-2 rounded">Add Image</button>
+            </div>
+
+           
+            <div id="imageBoxes" class="mt-6 grid grid-cols-3 gap-4">
+                
+            </div>
+        </div>
+
+        <script src="./app.js"></script>
+    </body>
+</html>
